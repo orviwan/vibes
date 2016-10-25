@@ -1,5 +1,39 @@
-$body-color: blue;
+@import "~node-normalize-scss/_normalize";
+
+//@import url('http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700');
+
+$roboto-slab: 'Roboto Slab', serif;
+$open-sans: 'Open Sans', sans-serif;
 
 body {
-  color: $body-color;
-}  
+  font-family: $roboto-slab;
+  font-weight: normal;
+  margin: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $open-sans;
+  font-weight: normal;
+}
+
+pre {
+  background-color: #f0f0f0;
+  outline: 1px solid #ccc;
+  padding: 5px;
+  margin: 10px 0;
+  .string { color: green; }
+  .number { color: darkorange; }
+  .boolean { color: blue; }
+  .null { color: magenta; }
+  .key { color: red; }
+  min-width: 400px;
+  min-height: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.btn {
+  font-size: 2em;
+  display: inline-block;
+  margin-right: 5px;
+}

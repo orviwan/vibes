@@ -6,3 +6,13 @@ if (module.hot) {
 
 import 'babel-polyfill';
 import '../styles/index.scss';
+
+var domready = require('detect-dom-ready');
+var Vibes = require('./vibes');
+
+domready(function() {
+  var vibes = new Vibes('Vibes');
+});
+
+
+
