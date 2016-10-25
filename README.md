@@ -1,13 +1,6 @@
-# Webpack Frontend Starterkit
+# Vibes
 
-A lightweight foundation for your next webpack based frontend project.
-
-
-### Installation
-
-```
-npm install
-```
+Play JSON vibration files
 
 ### Start Dev Server 
 
