@@ -1,3 +1,14 @@
+/*
+TODO: 
+
+Preview on watch using repl vibes
+Edit in the browser
+Generate JSON file
+Share preview via watchapp?
+
+*/
+
+
 var jsonQuery = require('json-query');
 
 function Vibes(id) {
