@@ -122,6 +122,7 @@ function Vibes(id) {
   };
 
   function _parsePebbleTune(data) {
+    tune.length = 0;
     data.pattern.forEach(function(note) {
       var noteData = jsonQuery('notes[id=' + note + ']', {data: data});
       tune.push({id: noteData.value.id, duration: noteData.value.vibe_duration_ms, strength: noteData.value.strength});
